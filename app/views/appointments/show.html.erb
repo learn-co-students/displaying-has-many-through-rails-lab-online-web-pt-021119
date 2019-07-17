@@ -1,0 +1,2 @@
+Doctor's Name: <%= link_to Doctor.find(@appointment.doctor_id).name, doctor_path(@appointment.doctor_id) %>
+Patient's Name: <%= link_to Patient.find(@appointment.patient_id).name, patient_path(@appointment.patient_id) %>
